@@ -71,3 +71,5 @@ function isPangram(str)
 }
 
 console.log(isPangram("The quick brown fox jumps over the lazy dog!"))
+
+//complexity 0(n)
