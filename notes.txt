@@ -1,0 +1,21 @@
+Results are below, it appears that the insert method will be more efficient only in the extra large array. The append method starts larger but scales on a steady axis, the insert method starts smaller but scales exponentially. The insert method doesn't scale as well as it should because of the unshift method. As the amount of indexes in the array gets higher, it starts adding more and more run time to (un)shift all the indexes down, vs just appending them to the end. 
+
+Results for the tinyArray
+insert 47.893 μs
+append 193.458 μs
+
+Results for the smallArray
+insert 55.29 μs
+append 209.633 μs
+
+Results for the mediumArray
+insert 187.318 μs
+append 225.971 μs
+
+Results for the largeArray
+insert 12.646149 ms
+append 664.083 μs
+
+Results for the extraLargeArray
+insert 1.591072789 s
+append 3.830534 ms
